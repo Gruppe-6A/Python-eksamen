@@ -30,6 +30,8 @@ Upload pictures to the Card_Imgs folder, and change the ```name_of_picture.jpg``
 ```input_img = cv2.imread('Card_Imgs/name_of_picture.jpg', 1)```
 
 ## What has been done/Not done
+Status (What has been done (and if anything: what was not done))
 
 
 ## List of challenges
+List of Challenges you have set up for your self (The things in your project you want to highlight)
