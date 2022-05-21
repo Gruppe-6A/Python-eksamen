@@ -24,8 +24,8 @@ pip install matplotlib
 ```
 
 ## To get started
-To use the program ```git clone``` the project to your Jupyter Notebook folder.
-Upload pictures to the Card_Imgs folder, and change the ```name_of_picture.jpg```, to the name of the image you are trying to use
+For at komme i gang, skal du til start ```git clone``` projektet til din egen Jupyter Notebook.
+Upload billedet som du vil bruge til ```Card_Imgs``` folderen, og inde i ```read_images.ipynb``` skal du ændre ```name_of_picture.jpg```, til navnet 
 
 ```input_img = cv2.imread('Card_Imgs/name_of_picture.jpg', 1)```
 
@@ -35,3 +35,5 @@ Status (What has been done (and if anything: what was not done))
 
 ## List of challenges
 List of Challenges you have set up for your self (The things in your project you want to highlight)
+- Pytesseract har svært ved at genkende 
+
