@@ -6,7 +6,7 @@ Her vil programmet forstå de øverste kort som værende dealerens kort og de ne
 
 OBS: Billederne skal helst tages på en sort baggrund
 
-![Eksempel](Card_Imgs/DetFirstHand.jpg "Eksempel")
+![Eksempel](Card_Imgs/DetFirstHand.JPG "Eksempel")
 
 ## Teknologier
 
