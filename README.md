@@ -29,7 +29,7 @@ For at installere de biblioteker vi bruger, skal du bare køre den øverste cell
 Kopier følgende ind i din terminal
 
 ```sh
-pip install opencv-python, pytesseract, numpy, matplotlib
+pip install opencv-python pytesseract numpy matplotlib
 ```
 
 ## Kom i gang
