@@ -39,7 +39,8 @@ Du kan enten benytte Jupyter Notebooks eller køre det som python projekt i en I
 ### Jupyter Notebooks
 
 For at komme i gang, skal du til at starte med at `git clone` projektet, til der hvor du har din egen Jupyter Notebook.
-Upload billedet som du vil bruge til `Card_Imgs` folderen eller brug et af dem der allerede er der, og inde i `read_images.ipynb` skal du ændre `name_of_picture.jpg`.
+Upload billedet som du vil bruge til `Card_Imgs` folderen eller brug et af dem der allerede er der.
+Inde i `read_images.ipynb` skal du ændre `name_of_picture.jpg`.
 
 Det er inde i denne funktion:
 
