@@ -11,7 +11,7 @@ import sys
 parser = argparse.ArgumentParser(description='Blackjack AI')
 
 # Add '--' to make it optional
-parser.add_argument('image', metavar='Name of Image', type=str, default='hand1.jpg',
+parser.add_argument('image', metavar='Name of Image', type=str, default='DetFirstHand.jpg',
                     help='Enter the name of the image you want to scan')
 
 args = parser.parse_args()

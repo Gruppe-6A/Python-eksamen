@@ -1,39 +1,65 @@
-# Black jack Assistant
+# Black Jack Assistant
 
-Black jack assistant, helps you choose if you are to 'stand' or 'hit'.
+Black jack assistent, hjælper dig med at vælge om du skal 'hit' eller 'stand'.
+Programmet tager et billede af et spil blackjack som input.
+Her vil programmet forstå de øverste kort som værende dealerens kort og de nederste kort som værende spillernes kort.
 
+OBS: Billederne skal helst tages på en sort baggrund
 
-## Technologies
+![Eksempel](Card_Imgs/DetFirstHand.jpg "Eksempel")
+
+## Teknologier
+
+- Pip (21.2.4)
 - Python 3 (3.7.6)
 - OpenCV (4.5.5)
-- Numpy (1.18.5
+- Numpy (1.18.5)
 - MatPlotLib (3.2.1)
 - Pytesseract (0.3.9)
-- ipynb (0.1.4)
 - Jupyter Notebooks (6.0.3)
 
-## Installation Guide
-To get started install the following libraries with pip
+## Installations Guide
+
+### Jupyter Notebooks
+
+For at installere de biblioteker vi bruger, skal du bare køre den øverste celle, inde i `read_images.ipynb`
+
+### Python 3
+
+Kopier følgende ind i din terminal
+
 ```sh
-pip install opencv-python
-pip install pytesseract
-pip install numpy
-pip install ipynb
-pip install import_ipynb
-pip install matplotlib
+pip install opencv-python, pytesseract, numpy, matplotlib
 ```
 
-## To get started
-For at komme i gang, skal du til start ```git clone``` projektet til din egen Jupyter Notebook.
-Upload billedet som du vil bruge til ```Card_Imgs``` folderen, og inde i ```read_images.ipynb``` skal du ændre ```name_of_picture.jpg```, til navnet 
+## Kom i gang
 
-```input_img = cv2.imread('Card_Imgs/name_of_picture.jpg', 1)```
+Du kan enten benytte Jupyter Notebooks eller køre det som python projekt i en IDE.
 
-## What has been done/Not done
-Status (What has been done (and if anything: what was not done))
+### Jupyter Notebooks
 
+For at komme i gang, skal du til at starte med at `git clone` projektet, til der hvor du har din egen Jupyter Notebook.
+Upload billedet som du vil bruge til `Card_Imgs` folderen eller brug et af dem der allerede er der, og inde i `read_images.ipynb` skal du ændre `name_of_picture.jpg`.
 
-## List of challenges
-List of Challenges you have set up for your self (The things in your project you want to highlight)
-- Pytesseract har svært ved at genkende 
+Det er inde i denne funktion:
 
+`input_img = cv2.imread('Card_Imgs/name_of_picture.jpg', 1)`
+
+### Python fil
+
+For at komme i gang skal du `git clone` projektet til dit skrivebord.
+Derefter kører du filen ved at skrive `python read_images.py hand1.jpg` i din terminal.
+Her er `hand1.jpg` navnet på det billede, som du gerne vil bruge.
+
+## Hvad har i nået/ikke nået
+
+Vi har taget billeder af fysiske spillekort, og så derefter sat dem ind i en mappe.
+Vi henter så billederne fra mappen og bruger OpenCV til at lave billedemanipulation, så vi nemmere kan benytte Tesseract til at finde kortenes værdi.
+Udover dette, har vi lavet en algoritme der ved brug af blackjack statistik kan udregne hvad det optimale næste træk er.
+Algoritmen tager kortenes værdi som input og fortæller spilleren hvorvidt de skal 'stand' eller 'hit.
+
+## Liste af udfordringer
+
+- Tesseract har problemer med enkelte tal, specifikt 3 & 10.
+- Problemer med at warpe/beskære billederne, så de kan læses af Tesseract.
+- At skrive en algoritme, der udregner om du skal 'hit' eller 'stand'.
